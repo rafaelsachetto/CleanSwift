@@ -12,7 +12,7 @@
 
 import UIKit
 
-class ___VARIABLE_sceneName___Worker {
+final class ___VARIABLE_sceneName___Worker {
     func doSomeWork() {
         
     }

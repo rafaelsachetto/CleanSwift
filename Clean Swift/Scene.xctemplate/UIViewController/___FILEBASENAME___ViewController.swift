@@ -13,10 +13,10 @@
 import UIKit
 
 protocol ___VARIABLE_sceneName___DisplayLogic: class {
-    func displaySomething(viewModel: ___VARIABLE_sceneName___.Something.ViewModel)
+    func displaySomething(with viewModel: ___VARIABLE_sceneName___.Something.ViewModel)
 }
 
-class ___VARIABLE_sceneName___ViewController: UIViewController, ___VARIABLE_sceneName___DisplayLogic {
+final class ___VARIABLE_sceneName___ViewController: UIViewController, ___VARIABLE_sceneName___DisplayLogic {
     var interactor: ___VARIABLE_sceneName___BusinessLogic?
     var router: (NSObjectProtocol & ___VARIABLE_sceneName___RoutingLogic & ___VARIABLE_sceneName___DataPassing)?
 
@@ -71,10 +71,10 @@ class ___VARIABLE_sceneName___ViewController: UIViewController, ___VARIABLE_scen
 
     func doSomething() {
         let request = ___VARIABLE_sceneName___.Something.Request()
-        interactor?.doSomething(request: request)
+        interactor?.doSomething(with: request)
     }
 
-    func displaySomething(viewModel: ___VARIABLE_sceneName___.Something.ViewModel) {
+    func displaySomething(with viewModel: ___VARIABLE_sceneName___.Something.ViewModel) {
         //nameTextField.text = viewModel.name
     }
 }

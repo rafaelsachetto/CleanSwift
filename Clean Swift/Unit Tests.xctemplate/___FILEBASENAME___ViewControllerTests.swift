@@ -13,7 +13,7 @@
 @testable import ___PROJECTNAMEASIDENTIFIER___
 import XCTest
 
-class ___VARIABLE_sceneName___ViewControllerTests: XCTestCase {
+final class ___VARIABLE_sceneName___ViewControllerTests: XCTestCase {
     // MARK: Subject under test
 
     var sut: ___VARIABLE_sceneName___ViewController!
@@ -47,10 +47,10 @@ class ___VARIABLE_sceneName___ViewControllerTests: XCTestCase {
 
     // MARK: Test doubles
 
-    class ___VARIABLE_sceneName___BusinessLogicSpy: ___VARIABLE_sceneName___BusinessLogic {
+    final class ___VARIABLE_sceneName___BusinessLogicSpy: ___VARIABLE_sceneName___BusinessLogic {
         var doSomethingCalled = false
 
-        func doSomething(request: ___VARIABLE_sceneName___.Something.Request) {
+        func doSomething(with request: ___VARIABLE_sceneName___.Something.Request) {
             doSomethingCalled = true
         }
     }
@@ -75,7 +75,7 @@ class ___VARIABLE_sceneName___ViewControllerTests: XCTestCase {
 
         // When
         loadView()
-        sut.displaySomething(viewModel: viewModel)
+        sut.displaySomething(with: viewModel)
 
         // Then
         //XCTAssertEqual(sut.nameTextField.text, "", "displaySomething(viewModel:) should update the name text field")
