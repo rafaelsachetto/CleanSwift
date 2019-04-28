@@ -22,6 +22,11 @@ final class ___VARIABLE_sceneName___ViewController: UICollectionViewController, 
 
     // MARK: Object lifecycle
 
+    override init(collectionViewLayout layout: UICollectionViewLayout) {
+        super.init(collectionViewLayout: layout)
+        setup()
+    }
+
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         setup()
