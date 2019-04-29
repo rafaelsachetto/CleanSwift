@@ -31,7 +31,7 @@ final class ___VARIABLE_sceneName___Interactor: ___VARIABLE_sceneName___Business
         worker = ___VARIABLE_sceneName___Worker()
         worker?.doSomeWork()
 
-        let response = ___VARIABLE_sceneName___.Something.Response()
+        let response: ___VARIABLE_sceneName___.Something.Response = .init()
         presenter?.presentSomething(with: response)
     }
 }

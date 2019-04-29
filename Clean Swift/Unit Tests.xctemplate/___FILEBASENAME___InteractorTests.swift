@@ -49,9 +49,9 @@ final class ___VARIABLE_sceneName___InteractorTests: XCTestCase {
 
     func testDoSomething() {
         // Given
-        let spy = ___VARIABLE_sceneName___PresentationLogicSpy()
+        let spy: ___VARIABLE_sceneName___PresentationLogicSpy = .init()
         sut.presenter = spy
-        let request = ___VARIABLE_sceneName___.Something.Request()
+        let request: ___VARIABLE_sceneName___.Something.Request = .init()
 
         // When
         sut.doSomething(with: request)

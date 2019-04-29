@@ -41,9 +41,9 @@ final class ___VARIABLE_sceneName___ViewController: UICollectionViewController, 
 
     private func setup() {
         let viewController = self
-        let interactor = ___VARIABLE_sceneName___Interactor()
-        let presenter = ___VARIABLE_sceneName___Presenter()
-        let router = ___VARIABLE_sceneName___Router()
+        let interactor: ___VARIABLE_sceneName___Interactor = .init()
+        let presenter: ___VARIABLE_sceneName___Presenter = .init()
+        let router: ___VARIABLE_sceneName___Router = .init()
         viewController.interactor = interactor
         viewController.router = router
         interactor.presenter = presenter

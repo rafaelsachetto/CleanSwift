@@ -49,9 +49,9 @@ final class ___VARIABLE_sceneName___PresenterTests: XCTestCase {
 
     func testPresentSomething() {
         // Given
-        let spy = ___VARIABLE_sceneName___DisplayLogicSpy()
+        let spy: ___VARIABLE_sceneName___DisplayLogicSpy = .init()
         sut.viewController = spy
-        let response = ___VARIABLE_sceneName___.Something.Response()
+        let response: ___VARIABLE_sceneName___.Something.Response = .init()
 
         // When
         sut.presentSomething(with: response)

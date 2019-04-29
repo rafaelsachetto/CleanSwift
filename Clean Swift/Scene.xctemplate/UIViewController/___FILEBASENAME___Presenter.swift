@@ -22,7 +22,7 @@ final class ___VARIABLE_sceneName___Presenter: ___VARIABLE_sceneName___Presentat
     // MARK: Do something
   
     func presentSomething(with response: ___VARIABLE_sceneName___.Something.Response) {
-        let viewModel = ___VARIABLE_sceneName___.Something.ViewModel()
+        let viewModel: ___VARIABLE_sceneName___.Something.ViewModel = .init()
         viewController?.displaySomething(with: viewModel)
     }
 }

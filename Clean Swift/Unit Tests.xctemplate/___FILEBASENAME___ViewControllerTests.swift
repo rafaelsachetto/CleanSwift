@@ -59,7 +59,7 @@ final class ___VARIABLE_sceneName___ViewControllerTests: XCTestCase {
 
     func testShouldDoSomethingWhenViewIsLoaded() {
         // Given
-        let spy = ___VARIABLE_sceneName___BusinessLogicSpy()
+        let spy: ___VARIABLE_sceneName___BusinessLogicSpy = .init()
         sut.interactor = spy
 
         // When
@@ -71,7 +71,7 @@ final class ___VARIABLE_sceneName___ViewControllerTests: XCTestCase {
 
     func testDisplaySomething() {
         // Given
-        let viewModel = ___VARIABLE_sceneName___.Something.ViewModel()
+        let viewModel: ___VARIABLE_sceneName___.Something.ViewModel = .init()
 
         // When
         loadView()
